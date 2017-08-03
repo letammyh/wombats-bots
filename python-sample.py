@@ -1,13 +1,9 @@
 def wombat(state, time_left):
-    # Note that the function name MUST be wombat
+	shoot = 'command': { 'action': 'shoot', 'metadata': {} }
+
+     smoke = 'command': { 'action': 'smoke', 'metadata': {'direction' : 'backward' } }
+
     return {
-        'command': {
-            'action': 'turn',
-            'metadata': {
-                'direction': 'right'
-            }
-        },
-        'state': {
-            'hello': 'world'
-        }
+        'command': { previous == shoot : smoke ? shoot },
+        'state': { 'previous': 'state'['saved-state'] == shoot : smoke ? shoot }
     }
